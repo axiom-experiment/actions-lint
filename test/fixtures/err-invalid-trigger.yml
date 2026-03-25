@@ -1,0 +1,12 @@
+name: Invalid Trigger
+
+on:
+  invalid_event_name:
+  another_bad_trigger:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "This workflow has invalid triggers"

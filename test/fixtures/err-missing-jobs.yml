@@ -1,0 +1,7 @@
+name: Missing Jobs
+
+on: push
+
+# No jobs section defined at all
+env:
+  FOO: bar

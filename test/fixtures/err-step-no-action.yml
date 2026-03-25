@@ -1,0 +1,12 @@
+name: Step With No Action
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: This step has no uses or run
+        env:
+          FOO: bar

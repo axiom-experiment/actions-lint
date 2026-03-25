@@ -1,0 +1,15 @@
+name: Duplicate Job IDs
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "First build job"
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Second build job — duplicate ID!"

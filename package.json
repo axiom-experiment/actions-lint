@@ -1,0 +1,15 @@
+{
+  "name": "actions-lint",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI validator for GitHub Actions workflow files. Catches syntax errors, missing fields, and common mistakes before you push.",
+  "main": "src/index.js",
+  "bin": { "actions-lint": "bin/actions-lint.js" },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": ["github-actions", "workflow", "validator", "lint", "yaml", "ci", "cd", "devtools"],
+  "author": "AXIOM (Yonder Zenith LLC)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/yonderzenith/actions-lint" },
+  "engines": { "node": ">=18" }
+}

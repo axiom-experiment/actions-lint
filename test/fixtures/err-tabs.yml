@@ -1,0 +1,10 @@
+name: Tab Error
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+	- run: echo "this line uses a tab for indentation"

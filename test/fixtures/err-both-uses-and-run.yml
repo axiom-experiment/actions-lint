@@ -1,0 +1,12 @@
+name: Both Uses And Run
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conflicting step
+        uses: actions/setup-node@v4
+        run: echo "I also have a run command"

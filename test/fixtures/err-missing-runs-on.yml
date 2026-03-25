@@ -1,0 +1,9 @@
+name: Missing runs-on
+
+on: push
+
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "This job has no runs-on"
